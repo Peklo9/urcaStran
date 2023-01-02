@@ -63,7 +63,7 @@ const dodajPrihod = async (prihodOdhod) => {
     }
     console.log(pod.ura)
     try {
-    const post = await fetch('http://localhost:4000/posljiPodatke', {
+    const post = await fetch('https://urca1.onrender.com/posljiPodatke', {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -93,7 +93,7 @@ const dodajPrihod = async (prihodOdhod) => {
 }
 
 const pridobiPodatke = async () => {
-    const response = await fetch('http://localhost:4000/podatki')
+    const response = await fetch('https://urca1.onrender.com/podatki')
     const data = await response.json()
     console.log(data)
 }
@@ -104,7 +104,7 @@ const stanje = async () => {
         mesec: Number(d.getMonth()) + 1,
         leto: d.getFullYear()
     }
-    const response = await fetch('http://localhost:4000/stanje?' + new URLSearchParams({
+    const response = await fetch('https://urca1.onrender.com/stanje?' + new URLSearchParams({
         mesec: pod.mesec,
         leto: pod.leto
     }))
