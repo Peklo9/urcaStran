@@ -33,6 +33,7 @@ gumbZapri.addEventListener('click', () => {
 
 
 
+
 //fetch('http://localhost:4000/podatki')
 //.then(response => response.json())
 //.then(data => console.log(data))
@@ -137,4 +138,6 @@ osveziStanje()
 
 //pridobiPodatke()
 
-
+document.addEventListener('DOMContentLoaded', () => {
+    osveziStanje()
+})
