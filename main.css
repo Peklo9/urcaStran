@@ -9,6 +9,13 @@
    
 }
 
+.okvirGumbi {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .gumb {
     border-width: 0;
     outline: none;
@@ -60,5 +67,56 @@ body {
 .gumbZapri {
     padding: 2px;
 }
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+    
+}
+
+table {
+    border-spacing: 0;
+}
+
+.tabelaOkvir {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: auto;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 10px;
+}
+
+.prikaziTabelo {
+    display: block;
+}
+
+.poravnajSredina {
+    display: flex;
+    justify-content: center;
+}
+
+.okvirBrisiPrihOdh {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 4;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    width: auto;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+}
+
+
+
+
+
 
 
