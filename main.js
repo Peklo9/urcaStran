@@ -74,7 +74,7 @@ const dodajPrihod = async (prihodOdhod) => {
     }
     console.log(pod.ura)
     try {
-    const post = await fetch('urca1.onrender.com/posljiPodatke', {
+    const post = await fetch('https://urca1.onrender.com/posljiPodatke', {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -104,7 +104,7 @@ const dodajPrihod = async (prihodOdhod) => {
 }
 
 const pridobiPodatke = async () => {
-    const response = await fetch('urca1.onrender.com/podatki')
+    const response = await fetch('https://urca1.onrender.com/podatki')
     const data = await response.json()
     console.log(data)
 }
@@ -115,7 +115,7 @@ const stanje = async () => {
         mesec: Number(d.getMonth()) + 1,
         leto: d.getFullYear()
     }
-    const response = await fetch('urca1.onrender.com/stanje?' + new URLSearchParams({
+    const response = await fetch('https://urca1.onrender.com/stanje?' + new URLSearchParams({
         mesec: pod.mesec,
         leto: pod.leto
     }))
@@ -151,7 +151,7 @@ const tabelaPodatki = async (mesecIzbran) => {
         mesec: Number(mesecIzbran),
         leto: d.getFullYear()
     }
-    const response = await fetch('urca1.onrender.com/tabela?' + new URLSearchParams({
+    const response = await fetch('https://urca1.onrender.com/tabela?' + new URLSearchParams({
         mesec: pod.mesec,
         leto: pod.leto
     }))
@@ -218,7 +218,7 @@ tabela.addEventListener('click', (e) => {
 })
 
 const brisiPodatek = async (id) => {
-    const data = await fetch('urca1.onrender.com/brisanje?' + new URLSearchParams({
+    const data = await fetch('https://urca1.onrender.com/brisanje?' + new URLSearchParams({
         id: id
     }), { method: 'DELETE' })
     
