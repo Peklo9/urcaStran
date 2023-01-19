@@ -41,8 +41,8 @@ body {
 }
 
 .obvestilo {
-    width: 15rem;
-    height: 2rem;
+    width: 17rem;
+    height: auto;
     background-color: #ff82ac;
     position: absolute;
     left: 50%;
@@ -59,13 +59,8 @@ body {
     display: block;
 }
 
-.zapri {
-    float: right;
-
-}
-
-.gumbZapri {
-    padding: 2px;
+.gumbZapriObvestilo {
+    padding: 1px 10px;
 }
 
 td, th {
@@ -112,6 +107,26 @@ table {
     border-radius: 10px;
     padding: 20px;
     display: none;
+    
+}
+
+.okvirObvestilo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gumbZapriBrisanje {
+    border: 1px solid black;
+    padding: 2px 8px;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.gumbZapriBrisanje:hover {
+    background-color: black;
+    color: white;
 }
 
 
