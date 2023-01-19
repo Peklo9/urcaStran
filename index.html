@@ -19,8 +19,11 @@
     </div>
 
     <div class="obvestilo">
-        <span class="obvestiloText"></span>
-        <span class="zapri"><button class="gumbZapri">Close</button></span>
+        <div class="okvirObvestilo">
+            <span class="obvestiloText"></span>
+            <span class="zapri"><button class="gumbZapriObvestilo gumb">Zapri</button></span>
+        </div>
+        
     </div>
 
     <div class="tabelaOkvir p-3">
@@ -54,13 +57,17 @@
       
     
       <div class="okvirBrisiPrihOdh">
-        <div class="mb-3">
-          <h4>Prihod ali odhod?</h1>
-        </div>
-        <div class="gumbaBrisanje">
-          <button class="btn btn-primary gumbPrihod" style="margin-right: 25px;">Prihod</button>
-          <button class="btn btn-primary gumbOdhod">Odhod</button>
-        </div>
+        
+            <div class="mb-3">
+                <h4 style="display: inline-block; margin-right: 1rem;">Prihod ali odhod?</h1>
+                    <span style="float: right;" class="gumbZapriBrisanje">X</span>
+              </div>
+              <div>
+                <button class="btn btn-primary gumbPrihod" style="margin-right: 70px;">Prihod</button>
+                <button class="btn btn-primary gumbOdhod">Odhod</button>
+              </div>
+
+        
         
       </div>
 
